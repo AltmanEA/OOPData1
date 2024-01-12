@@ -1,0 +1,8 @@
+themes:
+  - url: "10_collection"
+    title: "Коллекции"
+    slides:
+      - url: "10_classes"
+        title: "Иерархия классов"
+        slide: 7
+        quiz: 1
