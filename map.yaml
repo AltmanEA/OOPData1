@@ -2,7 +2,7 @@ themes:
   - url: "10_collection"
     title: "Коллекции"
     slides:
-      - url: "10_classes"
-        title: "Иерархия классов"
+      - url: "10_iterator"
+        title: "Итератор"
         slide: 7
         quiz: 1
