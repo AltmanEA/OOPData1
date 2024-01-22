@@ -4,5 +4,9 @@ themes:
     slides:
       - url: "10_iterator"
         title: "Итератор"
-        slide: 7
-        quiz: 1
+        slide: 10
+        quiz: 6
+      - url: "20_methods"
+        title: "Методы массивов"
+        slide: 12
+        quiz: 7        
