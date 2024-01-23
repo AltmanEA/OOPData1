@@ -1,6 +1,26 @@
 ### Пример
 
 ```typescript
+class Student {
+    constructor(
+        public name: string
+    ) { } }
+class Group {
+    constructor(
+        public name: string,
+        public students: Array<Student>
+    ) { } }
+class Grade {
+    constructor(
+        public student: Student,
+        public value: number
+    ) { } }
+```
+---
+
+### Пример
+
+```typescript
 function p<T>(o: T): T {
     console.log(o)
     return o
@@ -19,7 +39,7 @@ const students_names = p(boys.concat(girls))
 
 ---
 
-### Функция map
+### Трансформация
 
 ```typescript
 const students_old: Student[] = [];
@@ -158,6 +178,26 @@ find(
     thisArg?: any): T | undefined;
 ```
 
+---
+
+### Функции анализа
+
+```typescript
+// Determines whether the specified callback function 
+// returns true for any element of an array.
+some(
+    predicate: (value: number, index: number, array: Int8Array) 
+        => unknown, 
+    thisArg?: any): boolean;
+// Determines whether all the members of an array 
+// satisfy the specified test.    
+every(
+    predicate: (value: number, index: number, array: Int8Array) 
+        => unknown, 
+    thisArg?: any): boolean;
+```
+
+
 ----
 
 ### Свертка
@@ -219,4 +259,15 @@ reduce<U>(
         currentIndex: number, 
         array: T[]) => U, 
     initialValue: U): U;
+```
+
+----
+
+### Сортировка
+
+```typescript
+// Sorts an array in place.
+// This method mutates the array and 
+//  returns a reference to the same array.
+sort(compareFn?: (a: T, b: T) => number): this;
 ```

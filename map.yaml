@@ -1,4 +1,11 @@
 themes:
+  - url: "00_intro"
+    title: "Введение"
+    slides:
+      - url: "10_about"
+        title: "О курсе"
+        slide: 0
+        quiz: 0
   - url: "10_collection"
     title: "Коллекции"
     slides:
@@ -8,5 +15,14 @@ themes:
         quiz: 6
       - url: "20_methods"
         title: "Методы массивов"
-        slide: 12
-        quiz: 7        
+        slide: 15
+        quiz: 7    
+      - url: "30_kind"
+        title: "Виды коллекций"
+        slide: 10
+        quiz: 6
+      - url: "40_lab"
+        title: "Задание к лабораторной работе"
+        slide: 0
+        quiz: 0
+
