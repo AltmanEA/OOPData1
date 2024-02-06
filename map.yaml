@@ -32,3 +32,7 @@ themes:
         title: "Сериализация"
         slide: 14
         quiz: 6
+      - url: "20_xml"
+        title: "XML"
+        slide: 14
+        quiz: 6
