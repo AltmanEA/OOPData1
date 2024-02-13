@@ -36,3 +36,7 @@ themes:
         title: "XML"
         slide: 14
         quiz: 6
+      - url: "30_xpath"
+        title: "XPath"
+        slide: 15
+        quiz: 10        
