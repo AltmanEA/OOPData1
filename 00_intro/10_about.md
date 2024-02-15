@@ -22,7 +22,7 @@
   year={2003}
 }
 ```
-- Парсинг с [elibrary.ru](elibrary.ru), [cyberleninka.ru](cyberleninka.ru)
+- Парсинг с [elibrary.ru](http://elibrary.ru), [cyberleninka.ru](http://cyberleninka.ru)
 - Вывод библиографического списка по ГОСТ
 - Страница формирования библиографической ссылки
 

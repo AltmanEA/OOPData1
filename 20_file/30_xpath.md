@@ -2,6 +2,8 @@
 
 [https://www.fedstat.ru/](https://www.fedstat.ru/)
 
+[Пример](data.xml)
+
 ```XML
 <GenericData xmlns="http://www.SDMX.org/..."
 <Header
@@ -9,6 +11,7 @@
 <Description
 <DataSet
 ```
+
 
 ---
 
