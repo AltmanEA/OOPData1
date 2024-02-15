@@ -66,7 +66,7 @@ function* myGenerator(){
 for(let n of myGenerator())
     console.log(n)
 ```
-
+<small>[конфигурация компилятора](tsconfig.json)<small>
 ---
 
 ### Интерфейс генератора
