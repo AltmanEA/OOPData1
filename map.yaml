@@ -7,7 +7,7 @@ themes:
         slide: 0
         quiz: 0
   - url: "10_collection"
-    title: "Коллекции"
+    title: "Коллекции (в разработке)"
     slides:
       - url: "10_iterator"
         title: "Итератор"
@@ -26,7 +26,7 @@ themes:
         slide: 0
         quiz: 0
   - url: "20_file"
-    title: "Данные в файлах"
+    title: "Данные в файлах (в разработке)" 
     slides:
       - url: "10_serial"
         title: "Сериализация"
