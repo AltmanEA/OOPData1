@@ -47,4 +47,23 @@ themes:
       - url: "50_lab"
         title: "Задание к лабораторной работе"
         slide: 0
-        quiz: 0              
+        quiz: 0
+  - url: "30_mongo"
+    title: "Работа с MongoDB"
+    slides:
+      - url: "10_connect"
+        title: "Подключение к MongoDB"
+        slide: 9
+        quiz: 6
+      - url: "20_crud"
+        title: "Базовые операции"
+        slide: 12
+        quiz: 6
+      - url: "30_document"
+        title: "Документы"
+        slide: 10
+        quiz: 6
+      - url: "40_lab"
+        title: "Задание к лабораторной работе"
+        slide: 0
+        quiz: 0        
