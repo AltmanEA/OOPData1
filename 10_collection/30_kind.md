@@ -51,6 +51,36 @@ interface WeakSet<T extends WeakKey> {
 [lodash](https://lodash.com),
 [immutable-js](https://immutable-js.com/)
 
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Что выдаст следующий код <code>let a = new Set([1,2,3]); let b = new Set([1,2,4]);  let intersect = new Set([...a].filter(i => b.has(i))); console.log(...intersect)</code>?",    
+    "right": [ 
+        "<code>1, 2</code>"
+    ],
+    "wrong": [
+        "<code>1, 2, 3, 4</code>",
+        "<code>3, 4</code>",
+        "<code>3</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какие свойства есть в <code>Set</code> но нет в <code>WeakSet</code>?",    
+    "right": [ 
+        "<code>foreach</code>",
+        "<code>size</code>"
+    ],
+    "wrong": [
+        "<code>add</code>",
+        "<code>has</code>"
+    ]
+}'></div>
+
+
 ----
 
 ### Карта
@@ -100,6 +130,35 @@ interface WeakMap<K extends WeakKey, V> {
 }
 ```
 
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какие утверждения верные",    
+    "right": [ 
+        "Ключи карты могут быть только уникальными"
+    ],
+    "wrong": [
+        "Значения карты могут быть только уникальными",
+        "Ключи могут быть только числами",
+        "Ключи могут быть только строками"        
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какие свойства есть в <code>Map</code> но нет в <code>Set</code>?",    
+    "right": [ 
+        "<code>get</code>",
+        "<code>set</code>"
+    ],
+    "wrong": [
+        "<code>add</code>",
+        "<code>has</code>"
+    ]
+}'></div>
+
+
 ----
 
 ### Тип Stack 
@@ -130,3 +189,31 @@ const oddSquares = Seq([ 1, 2, 3, 4, 5, 6, 7, 8 ])
   .filter(x => x % 2 !== 0)
   .map(x => x * x)
 ```
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "В каком типе коллекций время вставки и удаления не зависят от размера коллекции?",    
+    "right": [ 
+        "Stack"        
+    ],
+    "wrong": [
+        "Seq",
+        "Array",
+        "Map"        
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какой тип коллекций быстрее выполнит последовательность действий при большом размере коллекции?",    
+    "right": [ 
+        "Seq"        
+    ],
+    "wrong": [
+        "Stack",
+        "Array",
+        "Map"        
+    ]
+}'></div>

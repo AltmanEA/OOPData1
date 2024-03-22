@@ -81,6 +81,34 @@ map<U>(
     thisArg?: any): U[];
 ```
 
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какой тип возвращает функция <code>map< U >(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any)</code>?",    
+    "right": [ 
+        "<code>U[]</code>"
+    ],
+    "wrong": [
+        "<code>U</code>",
+        "<code>T</code>",
+        "<code>T[]</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Что из перечисленного не является аргументом функции  <code>callbackfn</code> в функции <code>map</code>?",    
+    "right": [ 
+        "<code>thisArg</code>"
+    ],
+    "wrong": [
+        "<code>value</code>",
+        "<code>index</code>",
+        "<code>array</code>"
+    ]
+}'></div>
+
 ----
 
 ### Фильтрация или отбор
@@ -134,6 +162,34 @@ filter<S extends T>(
     predicate: (value: T, index: number, array: T[]) => value is S, 
     thisArg?: any): S[];
 ```
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какой тип возвращает функция <code>filter(predicate: (value: T, index: number, array: T[]) => unknown, thisArg?: any)</code>?",    
+    "right": [ 
+        "<code>T[]</code>"
+    ],
+    "wrong": [
+        "<code>unknown</code>",
+        "<code>T</code>",
+        "<code>any</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какая из сигнатур функций может использовать для предиката?",    
+    "right": [ 
+        "<code>(value: T, index: number, array: T[]) => value is S</code>",
+        "<code>(value: T, index: number, array: T[]) => unknown</code>"
+    ],
+    "wrong": [
+        "<code>(value: T, index: number, array: T[]) => U</code>",
+        "<code>(value: T, index: number, array: T[]) => T</code>"        
+    ]
+}'></div>
 
 ----
 
@@ -197,6 +253,33 @@ every(
     thisArg?: any): boolean;
 ```
 
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какой тип возвращает функция <code>find(predicate: (value: T, index: number, obj: T[]) => unknown, thisArg?: any)</code>?",    
+    "right": [ 
+        "<code>T | undefined</code>"
+    ],
+    "wrong": [
+        "<code>T[]</code>",
+        "<code>T</code>",
+        "<code>T[] | undefined</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какая функция проверяет, все ли элементы массива удовлетворяют условию?",    
+    "right": [ 
+        "<code>every</code>"
+    ],
+    "wrong": [
+        "<code>find</code>",
+        "<code>some</code>",
+        "<code>any</code>"
+    ]
+}'></div>
 
 ----
 
@@ -260,6 +343,35 @@ reduce<U>(
         array: T[]) => U, 
     initialValue: U): U;
 ```
+
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какой тип возвращает функция <code>reduce< U >(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U)</code>?",    
+    "right": [ 
+        "<code>U</code>"
+    ],
+    "wrong": [
+        "<code>T[]</code>",
+        "<code>T</code>",
+        "<code>U[]</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Какие функции возвращают массив элементов",    
+    "right": [ 
+        "<code>map</code>",
+        "<code>filter</code>"
+    ],
+    "wrong": [
+        "<code>find</code>",
+        "<code>reduce</code>"        
+    ]
+}'></div>
 
 ----
 
