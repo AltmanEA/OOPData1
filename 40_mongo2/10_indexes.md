@@ -237,3 +237,73 @@ inputStage: [Object]</code></pre>
 </div></div>
 
 ----
+
+### Запросы с диапазоном
+
+```typescript
+series_col.find({
+    grtov: { $gt: 9000, $lt: 10000 } })
+```
+
+<div style="display: flex;">
+    <div style="flex: 2;">Без индекса    
+<pre><code>executionStats: {
+    executionSuccess: true,
+    nReturned: 6516,
+    executionTimeMillis: 5,
+    totalKeysExamined: 6516,
+    totalDocsExamined: 6516,
+        ... }</code></pre>
+</div>
+<div style="flex: 2;">С индексом
+<pre><code>executionStats: {
+    executionSuccess: true,
+    nReturned: 6516,
+    executionTimeMillis: 9,
+    totalKeysExamined: 0,
+    totalDocsExamined: 26712,
+        ... }</code></pre>
+</div></div>
+
+---
+
+### Запросы с сортировкой
+
+```typescript
+series_col.find({
+    grtov: { $gt: 9000, $lt: 10000 } })
+    .sort({ okato: 1 })
+```
+
+<div style="display: flex;">
+    <div style="flex: 2;">Один индекс
+<pre><code>  executionStats: {
+    executionSuccess: true,
+    nReturned: 6516,
+    executionTimeMillis: 8,
+    totalKeysExamined: 6516,
+    totalDocsExamined: 6516,
+        ... }</code></pre>
+</div>
+<div style="flex: 2;">Два индекса
+<pre><code> executionStats: {
+    executionSuccess: true,
+    nReturned: 6516,
+    executionTimeMillis: 30,
+    totalKeysExamined: 26712,
+    totalDocsExamined: 26712,
+        ... }</code></pre>
+</div></div>
+
+---
+
+### Запросы с подсказкой
+
+```typescript
+series_col.find({
+    grtov: { $gt: 9000, $lt: 10000 } })
+        .sort({ okato: 1 })             // 35
+        // .hint({ grtov: 1 })          // 8
+        // .hint({ okato: 1 })          // 25
+        // .hint({ okato: 1, grtov: 1 })// 26
+```
