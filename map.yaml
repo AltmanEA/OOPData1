@@ -72,5 +72,17 @@ themes:
     slides:
       - url: "10_indexes"
         title: "Индексация"
-        slide: 9
-        quiz: 6        
+        slide: 13
+        quiz: 0
+      - url: "20_aggregation"
+        title: "Фреймворк агрегации"
+        slide: 7
+        quiz: 0
+      - url: "30_odm"
+        title: "Документы и объекты"
+        slide: 11
+        quiz: 0
+      - url: "40_lab"
+        title: "Задание к лабораторной работе"
+        slide: 0
+        quiz: 0          
