@@ -73,6 +73,20 @@ parser.write(xml).close()
 console.log(result)
 ```
 
+---
+
+<div class='quiz' data-quiz='{
+    "question": "В чем преимущество потокового парсера SAX?",
+    "right": [
+      "Скорость работы",
+      "Возможность анализа XML без преобразования в DOM"
+    ],
+    "wrong": [
+      "Простота программирования",
+      "Гибкая система команд"
+    ]
+  }'></div>
+
 ----
 
 ### Описываем состояния
@@ -155,6 +169,21 @@ function (t: string): void {
 	    <img src="fs1.svg"/>
     <div>
 <div>
+
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Какие события происходят в SAX?",
+    "right": [
+      "<code>onopentag</code>",
+      "<code>ontext</code>"
+    ],
+    "wrong": [
+      "<code>startElement</code>",
+      "<code>endNode</code>"
+    ]
+  }'></div>
 
 ----
 
@@ -251,3 +280,17 @@ Elapsed: 105ms
 сентябрь 2023 152878,2
 октябрь 2023 162370,6
 ```
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Какие связи между элементами конечного автомата и потокового парсера?",
+    "right": [
+      "переходы - события парсера",
+      "состояния - чтение определенного узла XML"
+    ],
+    "wrong": [
+      "переходы - переход на другой узел XML",
+      "состояния - события парсера"
+    ]
+  }'></div>

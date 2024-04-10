@@ -30,6 +30,49 @@ HTML, XML, SVG, ...
 - ```Element.setAttribute()```
 - ```Node.appendChild()```
 
+
+---
+
+<div class='quiz' data-quiz='{         
+  "question": "Что из перечисленного является типами данных DOM?",
+    "right": [
+      "<code>Node</code>",
+      "<code>Element</code>",
+      "<code>NodeList</code>"
+    ],
+    "wrong": [
+      "<code>ElementList</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Что из перечисленного является методами DOM?",
+    "right": [
+      "<code>createElement</code>",
+      "<code>getAttribute</code>"
+    ],
+    "wrong": [
+      "<code>createAttribute</code>",
+      "<code>getElement</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Что из перечисленного является методами DOM?",
+    "right": [
+      "<code>querySelector</code>",
+      "<code>appendChild</code>"
+    ],
+    "wrong": [
+      "<code>appendAttribute</code>",
+      "<code>queryElement</code>"
+    ]
+}'></div>
+
 ----
 
 ### Сериализация в XML
@@ -111,6 +154,20 @@ const xml = create({ version: "1.0" })
   </SerialLesson>
 </lessons>
 ```
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Какая библиотека преобразует JSON в XML?",
+    "right": [
+      "<code>xml-js</code>"
+    ],
+    "wrong": [
+      "<code>xmlbuilder2</code>",
+      "<code>xmldom</code>",
+      "<code>class-transform</code>"
+    ]
+}'></div>
 
 ----
 
@@ -202,3 +259,31 @@ New nodes:  [
     '\n'
 ]
 ```
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Какая библиотека может использоваться для создания XML DOM?",
+    "right": [
+      "<code>xmlbuilder2</code>",
+      "<code>xmldom</code>"
+    ],
+    "wrong": [
+      "<code>xml-js</code>",
+      "<code>class-transform</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Какая библиотека подходит для редактирования XML DOM?",
+    "right": [
+      "<code>xmldom</code>"
+    ],
+    "wrong": [
+      "<code>xmlbuilder2</code>",
+      "<code>xml-js</code>",
+      "<code>class-transform</code>"
+    ]
+}'></div>

@@ -48,6 +48,20 @@
 	</generic:Series>
 ```
 
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Как называется международный стандарт обмена данными?",
+    "right": [
+      "SDMX"
+    ],
+    "wrong": [
+      "SXML",
+      "SDOM",
+      "XPath"
+    ]
+}'></div>
+
 ----
 
 ### Загрузка файла
@@ -97,6 +111,35 @@ console.log("Данных: " + series.length)
 Данных: 1050
 ```
 
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Какие аргументы есть у функции <code>selectWithResolver</code>?",
+    "right": [
+      "XPATH запрос",
+      "XML документ",
+      "NS резолвер"
+    ],
+    "wrong": [
+      "DOM билдер"
+    ]
+}'></div>
+
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Как разделяются пространство и имя элемента в XPath?",
+    "right": [
+      ":"
+    ],
+    "wrong": [
+      ".",
+      "/",
+      "//"
+    ]
+}'></div>
+
 ----
 
 ### Пространство по умолчанию
@@ -143,6 +186,48 @@ console.log("ОКАТО: " + okato.length)
 ```
 ОКАТО: 98
 ```
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Как в пути разделяются имя узла и имя непосредственно вложенного узла XPath?",
+    "right": [
+      "/"
+    ],
+    "wrong": [
+      ".",
+      ":",
+      "//"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Как в пути разделяются имя узла и имя вложенного на любом уровне узла XPath?",
+    "right": [
+      "//"
+    ],
+    "wrong": [
+      ".",
+      ":",
+      "/"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{         
+    "question": "Как правильно уточнить значение аттрибута узла в XPath?",
+    "right": [
+      "[@id = \"s_OKATO\"]"
+    ],
+    "wrong": [
+      "[\"id\" = \"s_OKATO\"]",
+      "{\"id\" = \"s_OKATO\"}",
+      "(\"id\" = \"s_OKATO\")"
+    ]
+}'></div>
 
 ----
 
@@ -198,6 +283,34 @@ function getData(cursor: Node[]) {
     .reduce((p: string, c: string) => p + c)
 ```
 
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как в XPath указывается, что условие задается для текущего узла?",
+    "right": [
+      "."
+    ],
+    "wrong": [
+      "..",
+      ":",
+      "_"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как в XPath указывается, что условие задается для родительского узла?",
+    "right": [
+      ".."
+    ],
+    "wrong": [
+      ".",
+      ":",
+      "_"
+    ]
+  }'></div>
+
 ----
 
 ### Статистика по России
@@ -251,3 +364,31 @@ Elapsed: 30ms
 апрель 2022: 145504,7
 май 2022: 140247,7
 ```
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как в XPath можно объединить два условия с помощью логического <code>и</code>?",
+    "right": [
+      "<code>and</code>",
+      "<code>[][]</code>"
+    ],
+    "wrong": [
+      "|",
+      "&"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как в XPath можно объединить два условия с помощью логического <code>или</code>?",
+    "right": [
+      "|"
+    ],
+    "wrong": [
+      "<code>and</code>",
+      "<code>[][]</code>",
+      "&"
+    ]
+  }'></div>

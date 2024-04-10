@@ -65,6 +65,49 @@ lesson:
     surname: Пушкин
 ```
 
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Каким образом задается вложенный объект в нотации JSON?",
+    "right": [
+      "<code>{...}</code>"
+    ],
+    "wrong": [
+      "<code>< xxx >...< /xxx ></code>",
+      "<code>отступ на позицию вправо</code>",
+      "<code>[...]</code>"
+    ]
+}'></div>
+
+
+---
+
+<div class='quiz' data-quiz='{ 
+    "question": "Каким образом задается вложенный объект в нотации XML?",
+    "right": [
+      "<code>< xxx >...< /xxx ></code>"
+    ],
+    "wrong": [
+      "<code>{...}</code>",
+      "<code>отступ на позицию вправо</code>",
+      "<code>[...]</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{     
+    "question": "Каким образом задается вложенный объект в нотации YAML?",
+    "right": [
+      "<code>отступ на позицию вправо</code>"
+    ],
+    "wrong": [
+      "<code>{...}</code>",
+      "<code>< xxx >...< /xxx ></code>",
+      "<code>[...]</code>"
+    ]
+}'></div>
+
 ----
 
 ### Простой объект
@@ -121,6 +164,49 @@ undefined
 Александр Пушкин
 Александр Пушкин
 ```
+
+---
+
+<div class='quiz' data-quiz='{     
+    "question": "Какая из перечисленных функций возвращает JSON объект?",
+    "right": [
+      "<code>JSON.parse</code>"
+    ],
+    "wrong": [
+      "<code>Object.assign</code>",
+      "<code>JSON.stringify</code>",
+      "<code>plainToInstance</code>"
+    ]
+}'></div>
+
+
+---
+
+<div class='quiz' data-quiz='{     
+    "question": "Какая из перечисленных функций возвращает объект с методами?",
+    "right": [
+      "<code>Object.assign</code>",
+      "<code>plainToInstance</code>"
+    ],
+    "wrong": [
+      "<code>JSON.parse</code>",
+      "<code>JSON.stringify</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{     
+    "question": "Какая из перечисленных функций возвращает строку в формате JSON?",
+    "right": [
+      "<code>JSON.stringify</code>"
+    ],
+    "wrong": [
+      "<code>Object.assign</code>",
+      "<code>JSON.parse</code>",
+      "<code>plainToInstance</code>"
+    ]
+}'></div>
 
 ----
 
@@ -188,6 +274,34 @@ undefined
 undefined
 Александр Пушкин
 ```
+
+---
+
+<div class='quiz' data-quiz='{     
+    "question": "Перед чем записывается декоратор <code>Type</code> библиотеки <code>class-transformer</code>?",
+    "right": [
+      "перед вложенными объектами класса"
+    ],
+    "wrong": [
+      "перед классом с вложенными объектами",
+      "перед методом<code>JSON.parse</code>",
+      "перед методом <code>plainToInstance</code>"
+    ]
+}'></div>
+
+---
+
+<div class='quiz' data-quiz='{     
+    "question": "Какая из перечисленных функций возвращает объект с методами, в том числе и для вложенных объектов?",
+    "right": [
+      "<code>plainToInstance</code>"
+    ],
+    "wrong": [
+      "<code>Object.assign</code>",
+      "<code>JSON.parse</code>",
+      "<code>JSON.stringify</code>"
+    ]
+}'></div>
 
 ----
 
@@ -267,3 +381,17 @@ PassCard { person: PersonTutor { name: 'Эйлер', _type: 'tutor' } }
 Проф. Эйлер
 Проф. Эйлер
 ```
+
+---
+
+<div class='quiz' data-quiz='{     
+    "question": "Какие свойства нужно задать дискриминатору при полиморфной сериализации?",
+    "right": [
+      "<code>property</code>",
+      "<code>subTypes</code>"
+    ],
+    "wrong": [
+      "<code>type</code>",
+      "<code>abstract</code>"
+    ]
+}'></div>
