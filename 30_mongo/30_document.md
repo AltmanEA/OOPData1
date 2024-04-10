@@ -55,6 +55,21 @@ console.log(await students_col.find().toArray())
 ]
 ```
 
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Что используется для связи с документами другой коллекции в MongoDB?",
+    "right": [
+      "идентификатор"
+    ],
+    "wrong": [
+      "ссылка",
+      "ключ",
+      "url"
+    ]
+  }'></div>
+
+
 ----
 
 ### Тестовые данные
@@ -133,6 +148,64 @@ await collection.updateOne(
 )
 ```
 
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как правильно создать запрос на выборку объектов в MongoDB, отвечающим двум условиям?",
+    "right": [
+      "<code>$and: [ { x: 1 }, { y: 2 } ]</code>"
+    ],
+    "wrong": [
+      "<code>{ x: 1 } $and { y: 2 }</code>",
+      "<code>$and: { { x: 1 }, { y: 2 } }</code>",
+      "<code>$and: { x: 1, y: 2 }</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как правильно обратиться к вложенному объекту в MongoDB?",
+    "right": [
+      "<code>{ \"x.y\": 1 }</code>"
+    ],
+    "wrong": [
+      "<code>{ x: { y: 1 }}</code>",
+      "<code>$and: { { x: 1 }, { y: 2 } }</code>",
+      "<code>$and: { x: 1, y: 2 }</code>"
+    ]
+  }'></div>
+
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как правильно обновить два поля в  MongoDB?",
+    "right": [
+      "<code>$set: { \"grades.$.value\": value, \"grades.$.date\": date }</code>"
+    ],
+    "wrong": [
+      "<code>$set: [ \"grades.$.value\": value, \"grades.$.date\": date ]</code>",
+      "<code>{ $set: \"grades.$.value\": value, $set: \"grades.$.date\": date }</code>",
+      "выполнить два запроса"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "В какую позицию вставляет значение позиционный оператор <code>$</code> в MongoDB?",
+    "right": [
+      "найденную в запросе на обновление"
+    ],
+    "wrong": [
+      "добавляет в конец массива",
+      "добавляет в начало массива",
+      "изменяет все элементы массива"
+    ]
+  }'></div>
+
+
 ----
 
 ### Оператор ```in```
@@ -151,3 +224,31 @@ The [$push](https://www.mongodb.com/docs/manual/reference/operator/update/push/)
 ### Оператор ```$[]```
 
 The all positional operator [$[]](https://www.mongodb.com/docs/manual/reference/operator/update/positional-all/) indicates that the update operator should modify all elements in the specified array field.
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "В какую позицию вставляет значение оператор <code>$[]</code> в MongoDB?",
+    "right": [
+      "изменяет все элементы массива"
+    ],
+    "wrong": [
+      "найденную в запросе на обновление",
+      "добавляет в конец массива",
+      "добавляет в начало массива"
+    ]
+  }'></div>
+  
+---
+
+<div class='quiz' data-quiz='{
+    "question": "В какую позицию вставляет значение оператор <code>$push</code> в MongoDB?",
+    "right": [
+      "добавляет в конец массива"
+    ],
+    "wrong": [
+      "изменяет все элементы массива",
+      "найденную в запросе на обновление",
+      "добавляет в начало массива"
+    ]
+  }'></div>

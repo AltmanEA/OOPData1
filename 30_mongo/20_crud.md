@@ -63,6 +63,34 @@ CommandSucceededEvent {
 }
 ```
 
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Аргумент какого типа может передаваться в функцию <code>insertOne</code> для коллекции с типом элементов <code>T</code>?",
+    "right": [
+      "<code>T</code>"
+    ],
+    "wrong": [
+      "<code>string</code>",
+      "<code>T[]</code>",
+      "<code>string[]</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Аргумент какого типа может передаваться в функцию <code>insertMany</code> для коллекции с типом элементов <code>T</code>?",
+    "right": [
+      "<code>T[]</code>"
+    ],
+    "wrong": [
+      "<code>string</code>",
+      "<code>T</code>",
+      "<code>string[]</code>"
+    ]
+  }'></div>
+
 ----
 
 ### Read
@@ -137,6 +165,63 @@ scholars.find({ group: { $gt: 22, $lt: 25 } }).toArray()
     group: 23  } ]
 ```
 
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Результат какого типа возвращает вызов <code>find().toArray()</code> для коллекции с типом элементов <code>T</code>?",
+    "right": [
+      "<code>Promise < T[] > </code>"
+    ],
+    "wrong": [
+      "<code>Promise < T > </code>",
+      "<code>T</code>",
+      "<code>T[]</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Результат какого типа возвращает вызов <code>findOne()</code> для коллекции с типом элементов <code>T</code>?",
+    "right": [
+      "<code>Promise < WithId< T >  | null > </code>"
+    ],
+    "wrong": [
+      "<code>Promise < T[] > </code>",
+      "<code>T | null</code>",
+      "<code>T[]</code>"
+    ]
+  }'></div>
+
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как правильно найти всех студентов группы?",
+    "right": [
+      "<code>find({ group: 22 })</code>"
+    ],
+    "wrong": [
+      "<code>find([ group: 22])</code>",
+      "<code>find(\"group = 22\")</code>",
+      "<code>find(\"group: 22\")</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как правильно найти всех студентов группа которых меньше или равна 22?",
+    "right": [
+      "<code>find({ group: { $gle: 22 } })</code>"
+    ],
+    "wrong": [
+      "<code>find({ group: { $gte: 22 } })</code>",
+      "<code>find({ group: { $gl: 22 } })</code>",
+      "<code>find({ group: { $gte: 22 } })</code>"
+    ]
+  }'></div>
+
 ----
 
 ### Update
@@ -203,6 +288,49 @@ scholars.deleteMany({group: 21})
 []
 ```
 
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Что из перечисленного может быть первым аргументом функции <code>updateOne</code>?",
+    "right": [
+      "<code>{ name: \"Маша\" }</code>",
+      "<code>{ group: 22 }</code>"
+    ],
+    "wrong": [
+      "<code>{ $set: { name: \"Мария\" } }</code>",
+      "<code>{ group: { $set: 22 } }</code>"
+    ]
+  }'></div>
+
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Что из перечисленного может быть вторым аргументом функции <code>updateOne</code>?",
+    "right": [
+      "<code>{ $set: { name: \"Мария\" } }</code>"
+    ],
+    "wrong": [
+      "<code>{ name: \"Маша\" }</code>",
+      "<code>{ group: 22 }</code>",
+      "<code>{ group: { $set: 22 } }</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Что из перечисленного может быть аргументом функции <code>deleteMany</code>?",
+    "right": [
+      "<code>{ name: \"Маша\" }</code>",
+      "<code>{ group: 22 }</code>",
+      "<code>{ group: { $gl: 22 } }</code>"
+    ],
+    "wrong": [
+      "<code>{ group: { $set: 22 } }</code>"
+    ]
+  }'></div>
+
 ----
 
 ### Оператор ```$inc```
@@ -219,3 +347,32 @@ The [$inc](https://www.mongodb.com/docs/manual/reference/operator/update/inc/)
 When true, [updateOne()](https://www.mongodb.com/docs/manual/reference/method/db.collection.updateOne/) either:
 - Creates a new document if no documents match the filter. For more details see upsert behavior.
 - Updates a single document that matches the filter.
+
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Какое ключевое слово используется, если нужно увеличить поле в документе MongoDB?",
+    "right": [
+      "<code>inc</code>"
+    ],
+    "wrong": [
+      "<code>upsert</code>",
+      "<code>add</code>",
+      "<code>create</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Какое ключевое слово используется, если нужно при отсутствии обновляемого документа создать его?",
+    "right": [
+      "<code>upsert</code>"
+    ],
+    "wrong": [
+      "<code>inc</code>",
+      "<code>add</code>",
+      "<code>create</code>"
+    ]
+  }'></div>

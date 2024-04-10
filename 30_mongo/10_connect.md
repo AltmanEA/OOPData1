@@ -41,6 +41,35 @@ services:
 
 ![alt text](mongo_container.png)
 
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Какой порт по умолчанию используется MongoDB?",
+    "right": [
+      27017
+    ],
+    "wrong": [
+      8080,
+      8081,
+      3014
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как называется web приложение для управления MongoDB?",
+    "right": [
+      "mongo-express"
+    ],
+    "wrong": [
+      "mongo-admin",
+      "mongo-console",
+      "mongoMyAdmin"
+    ]
+  }'></div>
+
 ----
 
 ### Mongo express
@@ -64,6 +93,35 @@ services:
 ### Документ
 
 ![alt text](mongo_express_document.png)
+
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Как поле обязательно есть в документе MongoDB?",
+    "right": [
+      "<code>_id</code>"
+    ],
+    "wrong": [
+      "<code>name</code>",
+      "<code>collection</code>",
+      "<code>ObjectId</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Что из перечисленного верно?",
+    "right": [
+      "документы хранятся в коллекции MongoDB",
+      "база данных MongoDB состоит из коллекций"
+    ],
+    "wrong": [
+      "коллекция MongoDB содержит объекты",
+      "в MongoDB содержит таблицы"
+    ]
+  }'></div>
 
 ----
 
@@ -103,3 +161,31 @@ async function run() {
 console.log("RUN MONGO")
 run().catch(console.dir)
 ```
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Какие операции с MongoDB возвращают promise?",
+    "right": [
+      "<code>client.connect()</code>",
+      "<code>scholars.drop()</code>"
+    ],
+    "wrong": [
+      "<code>client.db(DB_NAME)</code>",
+      "<code>db.collection(COLLECTION)</code>"
+    ]
+  }'></div>
+
+---
+
+<div class='quiz' data-quiz='{
+    "question": "Какие аргументы у конструктора <code>MongoClient</code>?",
+    "right": [
+      "строка подключения",
+      "объект конфигурации"
+    ],
+    "wrong": [
+      "адрес сервера",
+      "имя базы данных"
+    ]
+  }'></div>
