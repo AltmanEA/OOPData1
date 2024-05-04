@@ -92,4 +92,12 @@ themes:
       - url: "10_typeorm"
         title: "TypeORM"
         slide: 17
-        quiz: 0        
+        quiz: 0
+      - url: "20_prisma"
+        title: "Prisma"
+        slide: 17
+        quiz: 0
+      - url: "30_lab"
+        title: "Задание к лабораторной работе"
+        slide: 0
+        quiz: 0           
