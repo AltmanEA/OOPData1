@@ -7,7 +7,7 @@ themes:
         slide: 0
         quiz: 0
   - url: "10_collection"
-    title: "Коллекции (в разработке)"
+    title: "Коллекции"
     slides:
       - url: "10_iterator"
         title: "Итератор"
