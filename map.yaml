@@ -26,7 +26,7 @@ themes:
         slide: 0
         quiz: 0
   - url: "20_file"
-    title: "Данные в файлах (в разработке)" 
+    title: "Данные в файлах" 
     slides:
       - url: "10_serial"
         title: "Сериализация"
