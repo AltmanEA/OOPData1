@@ -49,7 +49,7 @@ themes:
         slide: 0
         quiz: 0
   - url: "30_mongo"
-    title: "Основы MongoDB (в разработке)"
+    title: "Основы MongoDB"
     slides:
       - url: "10_connect"
         title: "Подключение к MongoDB"
@@ -62,7 +62,7 @@ themes:
       - url: "30_document"
         title: "Документы"
         slide: 10
-        quiz: 6
+        quiz: 7
       - url: "40_lab"
         title: "Задание к лабораторной работе"
         slide: 0
