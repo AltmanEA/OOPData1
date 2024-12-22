@@ -43,7 +43,7 @@ themes:
       - url: "40_sax"
         title: "SAX"
         slide: 14
-        quiz: 6
+        quiz: 3
       - url: "50_lab"
         title: "Задание к лабораторной работе"
         slide: 0
